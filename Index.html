@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <h1> Cadastro </h1>
+    <form action='saida.php' method='POST'>
+      Nome da Banda: 
+      <br><input type='text' align='center'  name='bAnda' size=40>
+      <br>
+      <br>
+      <i>Link</i> para imagem
+      <br><input type="text" name="imagem" size=40>
+      <br>
+      <br>
+      <strong>Integrante 1</strong> - Nome: 
+      <br><input type='text' align='center' name='pNome' size=40>
+      <br>
+      <br>        
+      <strong>Integrante 1</strong> - Data de nascimento: 
+      <br><input type='text' align='center'  name='pNascimento' size=40> 
+      <br>
+      <br> 
+      <strong>Integrante 1</strong> - Instrumento: 
+      <br><input type='text' align=center name='pInstrumento' size=40> 
+      <br>
+      <br>  
+      <strong>Integrante 2</strong> - Nome: 
+      <br><input type='text' align=center name='sNome' size=40>
+      <br>
+      <br>
+      <strong>Integrante 2</strong> - Data de nascimento: 
+      <br><input type='text' align=center name='sNascimento' size=40> 
+      <br>
+      <br>  
+      <strong>Integrante 2</strong> - Instrumento: 
+      <br><input type='text' align=center name='sInstrumento' size=40> 
+      <br>
+      <br>  
+      <strong>Integrante 3</strong> - Nome: 
+      <br><input type='text' align=center name='tNome' size=40>
+      <br>
+      <br>
+      <strong>Integrante 3</strong> - Data de nascimento: 
+      <br><input type='text' align=center name='tNascimento' size=40> 
+      <br>
+      <br>  
+      <strong>Integrante 3</strong> - Instrumento: 
+      <br><input type='text' align=center name='tInstrumento' size=40> 
+      <br>
+      <br>
+      <p name="Biografia">
+	  Biografia da banda:</p>
+	 <textarea rows="20"
+			   cols="80"
+			   name="Biografia" >
+	</textarea>
+    
+      
+      <p>Alterar cor de fundo</p>
+      <select name="corFundo" id="corFundo">
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarelo</option>
+        <option value="white">Branco</option>
+        <option value="black" selected="true">preto </option>
+        <option value="green">Verde</option>
+        <option value="red">Vermelho</option>
+      </select><br>
+	  
+	  <p>Alterar cor da fonte</p>
+      <select name="corFonte" id="corFonte">
+        <option value="blue">Azul</option>
+        <option value="yellow" selected="true"> Amarelo</option>
+        <option value="white">Branco</option>
+        <option value="black" >preto </option>
+        <option value="green">Verde</option>
+        <option value="red">Vermelho</option>
+      </select>
+      <br>
+	  </br>
+      <input type='submit' value='gerar Página'>             
+    </form>
+  </body>
+</html>
